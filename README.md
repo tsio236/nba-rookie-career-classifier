@@ -11,7 +11,7 @@ Investors want to identify rookies likely to last more than 5 years. Missing a f
 
 ## Data
 
-One row per rookie, with: games and minutes played, points per game, field goals, three-pointers and free throws (attempted, made, percentage), offensice and defensive rebounds, assists, steals, blocks, turnovers, and the target `TARGET_5Yrs` (1 = career of 5+ years). About 62% of players are positives. Missing three-point percentages (players with no attempt) are filled with 0.
+One row per rookie, with: games and minutes played, points per game, field goals, three-pointers and free throws (attempted, made, percentage), offensive and defensive rebounds, assists, steals, blocks, turnovers, and the target `TARGET_5Yrs` (1 = career of 5+ years). About 62% of players are positives. Missing three-point percentages (players with no attempt) are filled with 0.
 
 ## Approach
 
@@ -36,7 +36,7 @@ The model finds most long-career players, but half of the players who will not l
 | File | Purpose |
 |---|---|
 | `exploration.ipynb` | Exploration and model comparison |
-| `train.py` | Tuning, evaluation, saves the final model |
+| `train.py` | Tuning and model evaluation |
 | `integration.py` | Flask API serving the model |
 | `requirements.txt` | Dependencies (tested with Python 3.9) |
 
